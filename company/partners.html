@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partners | Ensaasmo</title>
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .partners-page {
+            padding: 120px 20px 60px;
+            min-height: 100vh;
+            background: var(--light);
+        }
+
+        .partners-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .page-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .page-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--accent), var(--neon));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .partners-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            margin: 4rem 0;
+        }
+
+        .partner-card {
+            background: white;
+            border-radius: 1rem;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 32, 96, 0.1);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 1px solid rgba(14, 165, 233, 0.1);
+        }
+
+        .partner-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 32, 96, 0.2);
+            border-color: var(--accent);
+        }
+
+        .partner-logo {
+            width: 100%;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            background: #f8fafc;
+            border-bottom: 1px solid rgba(14, 165, 233, 0.1);
+        }
+
+        .partner-logo img {
+            max-width: 80%;
+            max-height: 150px;
+            object-fit: contain;
+            filter: grayscale(100%) brightness(0.9);
+            transition: all 0.4s ease;
+        }
+
+        .partner-card:hover .partner-logo img {
+            filter: grayscale(0%);
+            transform: scale(1.1);
+        }
+
+        .partner-info {
+            padding: 2rem;
+        }
+
+        .partner-name {
+            font-size: 1.5rem;
+            color: var(--dark);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .partner-description {
+            color: var(--gray-600);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .learn-more {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 600;
+            transition: gap 0.3s ease;
+        }
+
+        .learn-more:hover {
+            gap: 1rem;
+        }
+
+        .learn-more i {
+            transition: transform 0.3s ease;
+        }
+
+        .learn-more:hover i {
+            transform: translateX(5px);
+        }
+
+        .partnership-cta {
+            text-align: center;
+            margin-top: 6rem;
+            padding: 4rem;
+            background: white;
+            border-radius: 1.5rem;
+            box-shadow: 0 10px 30px rgba(0, 32, 96, 0.1);
+        }
+
+        .partnership-cta h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--dark);
+        }
+
+        .partnership-cta p {
+            color: var(--gray-600);
+            margin-bottom: 2rem;
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            padding: 1rem 3rem;
+            background: linear-gradient(135deg, var(--accent), var(--neon));
+            color: white;
+            text-decoration: none;
+            border-radius: 0.75rem;
+            font-weight: 600;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+
+        .contact-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(14, 165, 233, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .partners-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .partnership-cta {
+                padding: 2rem;
+                margin-top: 4rem;
+            }
+
+            .partnership-cta h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cyber-grid"></div>
+    <header class="navbar">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="/WhatsApp_Image_2025-02-17_at_11.10.12_PM-removebg-preview.png" alt="ENSAASMO Logo">
+            </a>
+        </div>
+        <nav class="nav-links">
+            <a href="../index.html#pricing">Pricing</a>
+            <a href="../index.html#assessment">Assessment</a>
+            <a href="../index.html#resources">Resources</a>
+            <a href="../index.html#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main class="partners-page">
+        <div class="partners-content">
+            <div class="page-header">
+                <h1>Our Strategic Partners</h1>
+                <p>Collaborating with industry leaders to drive innovation in entrepreneurial development</p>
+            </div>
+
+            <div class="partners-grid">
+                <div class="partner-card">
+                    <div class="partner-logo">
+                        <img src="/WhatsApp Image 2025-03-02 at 9.08.15 AM.jpeg" alt="Skylenz Productions Logo">
+                    </div>
+                    <div class="partner-info">
+                        <h3 class="partner-name">Skylenz Productions</h3>
+                        <p class="partner-description">Leading creative production studio specializing in visual storytelling and brand development.</p>
+                        <a href="#" class="learn-more">Learn more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="partner-card">
+                    <div class="partner-logo">
+                        <img src="/WhatsApp Image 2025-03-02 at 6.46.53 PM.jpeg" alt="Ganaka Young Talents Academy Logo">
+                    </div>
+                    <div class="partner-info">
+                        <h3 class="partner-name">Ganaka Young Talents Academy</h3>
+                        <p class="partner-description">Premier youth development program fostering entrepreneurial mindset in young leaders.</p>
+                        <a href="#" class="learn-more">Learn more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="partner-card">
+                    <div class="partner-logo">
+                        <img src="/WhatsApp Image 2025-03-04 at 6.18.15 PM.jpeg" alt="Youth in Governance Initiative Logo">
+                    </div>
+                    <div class="partner-info">
+                        <h3 class="partner-name">Youth in Governance Initiative</h3>
+                        <p class="partner-description">Empowering young leaders to participate in governance and social entrepreneurship.</p>
+                        <a href="#" class="learn-more">Learn more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="partner-card">
+                    <div class="partner-logo">
+                        <img src="/WhatsApp Image 2025-03-13 at 12.54.25 PM.jpeg" alt="Eliprem Concepts Logo">
+                    </div>
+                    <div class="partner-info">
+                        <h3 class="partner-name">Eliprem Concepts</h3>
+                        <p class="partner-description">Innovative business solutions provider specializing in entrepreneurial development.</p>
+                        <a href="#" class="learn-more">Learn more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="partner-card">
+                    <div class="partner-logo">
+                        <img src="/WhatsApp Image 2025-03-13 at 1.54.47 PM (2).jpeg" alt="ZINTA Logo">
+                    </div>
+                    <div class="partner-info">
+                        <h3 class="partner-name">ZINTA</h3>
+                        <p class="partner-description">Leading technology solutions provider helping businesses achieve digital transformation.</p>
+                        <a href="#" class="learn-more">Learn more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="partner-card">
+                    <div class="partner-logo">
+                        <img src="/Black and Green Flat Illustrated Organic Cosmetics Logo (35).jpg" alt="Turung Logo">
+                    </div>
+                    <div class="partner-info">
+                        <h3 class="partner-name">Turung</h3>
+                        <p class="partner-description">Sustainable business consultancy focusing on eco-friendly entrepreneurship.</p>
+                        <a href="#" class="learn-more">Learn more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="partnership-cta">
+                <h2>Become a Partner</h2>
+                <p>Join our network of industry leaders and help shape the future of entrepreneurship</p>
+                <a href="../contact.html" class="contact-btn">Get in Touch</a>
+            </div>
+        </div>
+    </main>
+
+    <script src="../app.js"></script>
+</body>
+</html>

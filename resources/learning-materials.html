@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Materials | Ensaasmo</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .learning-container {
+            max-width: 1200px;
+            margin: 120px auto 60px;
+            padding: 2rem;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--accent), var(--neon));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .skill-category {
+            background: white;
+            border: 1px solid rgba(14, 165, 233, 0.1);
+            border-radius: 1rem;
+            padding: 2rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        .skill-category:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 32, 96, 0.15);
+            border-color: var(--accent);
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .section-icon {
+            width: 50px;
+            height: 50px;
+            background: rgba(14, 165, 233, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+            color: var(--accent);
+        }
+
+        .section-title {
+            font-size: 1.3rem;
+            color: var(--dark);
+        }
+
+        .resource-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .resource-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            border-radius: 0.75rem;
+            margin-bottom: 0.75rem;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(14, 165, 233, 0.1);
+        }
+
+        .resource-item:hover {
+            background: rgba(14, 165, 233, 0.05);
+            transform: translateX(10px);
+        }
+
+        .resource-icon {
+            color: var(--accent);
+            font-size: 1.2rem;
+        }
+
+        .resource-info h4 {
+            font-size: 1.1rem;
+            color: var(--dark);
+            margin: 0;
+        }
+
+        .resource-info p {
+            color: var(--gray-600);
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        .premium-tag {
+            background: rgba(14, 165, 233, 0.1);
+            color: var(--accent);
+            padding: 0.25rem 0.75rem;
+            border-radius: 1rem;
+            font-size: 0.8rem;
+            margin-left: auto;
+        }
+
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--accent);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .back-btn:hover {
+            transform: translateX(-5px);
+        }
+    </style>
+</head>
+<body>
+    <div class="cyber-grid"></div>
+    
+    <header class="navbar">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="/WhatsApp_Image_2025-02-17_at_11.10.12_PM-removebg-preview.png" alt="ENSAASMO Logo">
+            </a>
+        </div>
+        <nav class="nav-links">
+            <a href="../index.html#pricing">Pricing</a>
+            <a href="../index.html#assessment">Assessment</a>
+            <a href="../index.html#resources">Resources</a>
+            <a href="../index.html#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main class="learning-container">
+        <a href="../index.html#resources" class="back-btn">
+            <i class="fas fa-arrow-left"></i> Back to Resources
+        </a>
+
+        <div class="header">
+            <h1>Professional Development Library</h1>
+            <p>Curated materials for entrepreneurial mastery</p>
+        </div>
+
+        <div class="skills-grid">
+            <!-- Sales and Marketing Skills -->
+            <div class="skill-category" id="Sales & Marketing Expertise">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="section-title">Sales & Marketing Expertise</h3>
+                </div>
+                <ul class="resource-list">
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>Building a StoryBrand</h4>
+                            <p>Donald Miller - Clarify Your Message</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>Digital Marketing Strategy</h4>
+                            <p>Simon Kingsnorth - Online Marketing Guide</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>The Psychology of Selling</h4>
+                            <p>Brian Tracy - Increase Sales Faster</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>The Conversion Code</h4>
+                            <p>Chris Smith - Capturing Internet Leads</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>Hooked: How to Build Habit-Forming Products</h4>
+                            <p>Nir Eyal - Creating Customer Habits</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>Traction: How Any Startup Can Achieve Explosive Customer Growth</h4>
+                            <p>Gabriel Weinberg - 19 Channels for Growth</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>Crossing the Chasm: Marketing and Selling Disruptive Products to Mainstream Customers</h4>
+                            <p>Geoffrey Moore - Technology Adoption</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>Building a StoryBrand: Clarify Your Message So Customers Will Listen</h4>
+                            <p>Donald Miller - Brand Messaging</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>Pre-Suasion: A Revolutionary Way to Influence and Persuade</h4>
+                            <p>Robert Cialdini - Psychological Selling Tactics</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>They Ask You Answer: A Revolutionary Approach to Inbound Sales</h4>
+                            <p>Marcus Sheridan - Content Marketing Tactics</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Financial Skills -->
+            <div class="skill-category" id="Financial Management">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-coins"></i>
+                    </div>
+                    <h3 class="section-title">Financial Management</h3>
+                </div>
+                <ul class="resource-list">
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>Financial Intelligence</h4>
+                            <p>Karen Berman & Joe Knight - Money Management</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>Profit First</h4>
+                            <p>Mike Michalowicz - Cash Management</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>Small Business Financial Management</h4>
+                            <p>Steven M. Bragg - Essential Tools</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>Financial Modeling for Business Owners and Entrepreneurs</h4>
+                            <p>Tom Y. Sawyer - Developing Excel Models</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>The Intelligent Investor: The Definitive Book on Value Investing</h4>
+                            <p>Benjamin Graham - Updated by Jason Zweig</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>Financial Shenanigans: How to Detect Accounting Gimmicks & Fraud</h4>
+                            <p>Howard M. Schilit - Forensic Accounting</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>Corporate Financial Management: Strategies for Maximizing Shareholder Wealth</h4>
+                            <p>Glen Arnold - Corporate Finance Strategies</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>Financial Markets and Institutions: A Practical Perspective</h4>
+                            <p>Stanley G. Eakins - Modern Banking Systems</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>International Financial Management</h4>
+                            <p>Cheol S. Eun - Multinational Business Finance</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>Financial Strategy for Public Managers</h4>
+                            <p>Sharon Kioko - Government Financial Planning</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Intangible Skills -->
+            <div class="skill-category" id="Intangible Skills">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="section-title">Intangible Skills</h3>
+                </div>
+                <ul class="resource-list">
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>Emotional Intelligence 2.0</h4>
+                            <p>Travis Bradberry - Strategies for Increasing EQ</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>Crucial Conversations</h4>
+                            <p>Kerry Patterson et al. - Tools for Talking</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>Mindset: The New Psychology of Success</h4>
+                            <p>Carol S. Dweck - Fulfill Potential</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>Mindset: Changing The Way You Think To Fulfil Your Potential</h4>
+                            <p>Carol S. Dweck - Growth Mindset</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>Blink: The Power of Thinking Without Thinking</h4>
+                            <p>Malcolm Gladwell - Intuitive Decision Making</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>Grit: The Power of Passion and Perseverance</h4>
+                            <p>Angela Duckworth - Long-term Success Factors</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>The Art of Possibility: Transforming Professional and Personal Life</h4>
+                            <p>Rosamund Stone Zander - Creative Mindset</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>Deep Work: Rules for Focused Success in a Distracted World</h4>
+                            <p>Cal Newport - Cognitive Performance</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>Thinking in Bets: Making Smarter Decisions When You Don't Have All the Facts</h4>
+                            <p>Annie Duke - Decision Making Under Uncertainty</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>The Compound Effect: Jumpstart Your Income, Your Life, Your Success</h4>
+                            <p>Darren Hardy - Incremental Progress</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Personal Skills -->
+            <div class="skill-category" id="Personal Skills">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3 class="section-title">Personal Skills</h3>
+                </div>
+                <ul class="resource-list">
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>The 7 Habits of Highly Effective People</h4>
+                            <p>Stephen R. Covey - Personal Change</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>Atomic Habits</h4>
+                            <p>James Clear - Build Good Habits</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>Deep Work</h4>
+                            <p>Cal Newport - Focused Success</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>Essentialism: The Disciplined Pursuit of Less</h4>
+                            <p>Greg McKeown - Prioritizing What Matters</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>Indistractable: How to Control Your Attention and Choose Your Life</h4>
+                            <p>Nir Eyal - Managing Distractions</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>The Power of Now</h4>
+                            <p>Eckhart Tolle - Mindfulness and Presence</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>The Miracle Morning: The Not-So-Obvious Secret Guaranteed to Transform Your Life</h4>
+                            <p>Hal Elrod - Morning Routine for Success</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>Mini Habits: Smaller Habits, Bigger Results</h4>
+                            <p>Stephen Guise - Building Lasting Habits</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>The One Thing: The Surprisingly Simple Truth Behind Extraordinary Results</h4>
+                            <p>Gary Keller - Achieving More by Doing Less</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Communication and Collaboration -->
+            <div class="skill-category" id="Communication & Collaboration">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3 class="section-title">Communication & Collaboration</h3>
+                </div>
+                <ul class="resource-list">
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>Never Split the Difference</h4>
+                            <p>Chris Voss - Negotiating</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>Talk Like TED</h4>
+                            <p>Carmine Gallo - Public Speaking</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>Collaboration: How Leaders Avoid the Traps</h4>
+                            <p>Morten Hansen - Build Bridges</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>Crucial Accountability: Tools for Resolving Violated Expectations, Broken Commitments, and Bad Behavior</h4>
+                            <p>Kerry Patterson et al. - Effective Communication</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>Influence: The Psychology of Persuasion</h4>
+                            <p>Robert Cialdini - Understanding Human Behavior</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>Difficult Conversations: How to Discuss What Matters Most</h4>
+                            <p>Douglas Stone - Effective Communication</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>The Art of Public Speaking</h4>
+                            <p>Dale Carnegie - Overcoming Fear and Building Confidence</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>Nonviolent Communication: A Language of Life</h4>
+                            <p>Marshall B. Rosenberg - Effective Communication</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>Just Listen: Discover the Secret to Getting Through to Absolutely Anyone</h4>
+                            <p>Mark Goulston - Effective Listening</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Design Thinking -->
+            <div class="skill-category" id="Design Thinking">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 class="section-title">Design Thinking</h3>
+                </div>
+                <ul class="resource-list">
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>Change by Design</h4>
+                            <p>Tim Brown - Transform Organizations</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>Sprint</h4>
+                            <p>Jake Knapp - Solve Big Problems</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>The Design Thinking Playbook</h4>
+                            <p>Michael Lewrick - Mindful Digital Transformation</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>Designing Your Life: How to Build a Well-Lived, Joyful Life</h4>
+                            <p>Bill Burnett - Applying Design Principles to Life</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>Creative Confidence: Unleashing the Creative Potential Within Us All</h4>
+                            <p>David Kelley - Building Creative Confidence</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>The Innovator's DNA: Mastering the Five Skills of Disruptive Innovators</h4>
+                            <p>Jeff Dyer - Developing Innovative Skills</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>Orbiting the Giant Hairball: A Corporate Fool's Guide to Surviving with Grace</h4>
+                            <p>Gordon MacKenzie - Embracing Creativity in Business</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>A Technique for Producing Ideas</h4>
+                            <p>James Webb Young - Generating Ideas</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>The War of Art: Break Through the Blocks and Win Your Inner Creative Battles</h4>
+                            <p>Steven Pressfield - Overcoming Creative Blocks</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Administrative and Operational -->
+            <div class="skill-category" id="Administrative & Operational">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3 class="section-title">Administrative & Operational</h3>
+                </div>
+                <ul class="resource-list">
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>The Effective Executive</h4>
+                            <p>Peter F. Drucker - Guide to Getting Things Done</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>Operations Management</h4>
+                            <p>Jay Heizer - Sustainability and Supply Chain</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>Project Management Body of Knowledge</h4>
+                            <p>Project Management Institute - Essential Guide</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses</h4>
+                            <p>Eric Ries - Lean Principles for Startups</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>Agile Project Management with Scrum</h4>
+                            <p>Ken Schwaber - Agile Methodologies</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>Essentialism: The Disciplined Pursuit of Less</h4>
+                            <p>Greg McKeown - Prioritizing What Matters</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>Getting Things Done: The Art of Stress-Free Productivity</h4>
+                            <p>David Allen - Productivity and Time Management</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>The 4-Hour Work Week: Escape the 9-5, Live Anywhere and Join the New Rich</h4>
+                            <p>Timothy Ferriss - Lifestyle Design</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                    <li class="resource-item">
+                        <i class="fas fa-book resource-icon"></i>
+                        <div class="resource-info">
+                            <h4>The 80/20 Principle: The Secret to Achieving More with Less</h4>
+                            <p>Richard Koch - Understanding the Pareto Principle</p>
+                        </div>
+                        <span class="premium-tag">Premium</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <script src="../app.js"></script>
+</body>
+</html>

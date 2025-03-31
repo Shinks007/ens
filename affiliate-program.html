@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Affiliate Program | Ensaasmo</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .affiliate-page {
+            padding: 120px 20px 60px;
+            background: var(--light);
+        }
+
+        .affiliate-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .page-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .page-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--accent), var(--neon));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .affiliate-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .benefits-card {
+            background: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0, 32, 96, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .benefits-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 32, 96, 0.15);
+        }
+
+        .benefit-icon {
+            font-size: 2rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+
+        .benefits-card h3 {
+            color: var(--accent);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .benefits-card p {
+            color: var(--gray-600);
+            line-height: 1.6;
+        }
+
+        .commission-tiers {
+            background: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            margin: 3rem 0;
+            box-shadow: 0 10px 30px rgba(0, 32, 96, 0.1);
+        }
+
+        .tier {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem;
+            border-bottom: 1px solid var(--gray-200);
+        }
+
+        .tier:last-child {
+            border-bottom: none;
+        }
+
+        .tier-name {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--dark);
+        }
+
+        .tier-commission {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--accent);
+        }
+
+        .requirements {
+            margin: 3rem 0;
+            padding: 2rem;
+            background: rgba(14, 165, 233, 0.05);
+            border-radius: 1rem;
+        }
+
+        .requirements h2 {
+            color: var(--dark);
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+
+        .requirements ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .requirements li {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem 0;
+            color: var(--gray-600);
+            font-size: 1.1rem;
+        }
+
+        .requirements li i {
+            color: var(--accent);
+        }
+
+        .cta-section {
+            text-align: center;
+            margin: 4rem 0;
+            padding: 3rem;
+            background: white;
+            border-radius: 1rem;
+            box-shadow: 0 10px 30px rgba(0, 32, 96, 0.1);
+        }
+
+        .cta-section h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--dark);
+        }
+
+        .cta-section p {
+            color: var(--gray-600);
+            margin-bottom: 2rem;
+            font-size: 1.2rem;
+        }
+
+        .apply-btn {
+            display: inline-block;
+            padding: 1rem 3rem;
+            background: linear-gradient(135deg, var(--accent), var(--neon));
+            color: white;
+            text-decoration: none;
+            border-radius: 0.75rem;
+            font-weight: 600;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+
+        .apply-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(14, 165, 233, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .affiliate-page {
+                padding: 100px 1rem 40px;
+            }
+
+            .page-header h1 {
+                font-size: 2rem;
+            }
+
+            .commission-tiers {
+                padding: 1rem;
+            }
+
+            .tier {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="cyber-grid"></div>
+    
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="/WhatsApp_Image_2025-02-17_at_11.10.12_PM-removebg-preview.png" alt="ENSAASMO Logo">
+            </a>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html#pricing">Pricing</a>
+            <a href="index.html#assessment">Assessment</a>
+            <a href="index.html#resources">Resources</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main class="affiliate-page">
+        <div class="affiliate-content">
+            <div class="page-header">
+                <h1>Join Our Affiliate Program</h1>
+                <p>Partner with us to unlock entrepreneurial potential and earn competitive commissions</p>
+            </div>
+
+            <div class="affiliate-grid">
+                <div class="benefits-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <h3>Competitive Commissions</h3>
+                    <p>Earn industry-leading commissions on every successful referral with a tiered commission structure that rewards performance.</p>
+                </div>
+
+                <div class="benefits-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Marketing Resources</h3>
+                    <p>Access a comprehensive suite of marketing materials, including banners, email templates, and social media content.</p>
+                </div>
+
+                <div class="benefits-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Real-time Analytics</h3>
+                    <p>Track your performance with detailed analytics and reporting tools to optimize your promotional strategies.</p>
+                </div>
+            </div>
+
+            <div class="commission-tiers">
+                <h2>Commission Structure</h2>
+                <div class="tier">
+                    <span class="tier-name">Standard Partner</span>
+                    <span class="tier-commission">20% Commission</span>
+                </div>
+                <div class="tier">
+                    <span class="tier-name">Silver Partner</span>
+                    <span class="tier-commission">25% Commission</span>
+                </div>
+                <div class="tier">
+                    <span class="tier-name">Gold Partner</span>
+                    <span class="tier-commission">30% Commission</span>
+                </div>
+                <div class="tier">
+                    <span class="tier-name">Platinum Partner</span>
+                    <span class="tier-commission">35% Commission</span>
+                </div>
+            </div>
+
+            <div class="requirements">
+                <h2>Program Requirements</h2>
+                <ul>
+                    <li><i class="fas fa-check"></i> Active social media presence or website</li>
+                    <li><i class="fas fa-check"></i> Professional experience in entrepreneurship, business coaching, or related fields</li>
+                    <li><i class="fas fa-check"></i> Commitment to ethical marketing practices</li>
+                    <li><i class="fas fa-check"></i> Regular promotion of Ensaasmo services</li>
+                </ul>
+            </div>
+
+            <div class="cta-section">
+                <h2>Ready to Partner with Us?</h2>
+                <p>Join our affiliate program today and start earning while helping entrepreneurs succeed</p>
+                <a href="contact.html" class="apply-btn">Apply Now</a>
+            </div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
